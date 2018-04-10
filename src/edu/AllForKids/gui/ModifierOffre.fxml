@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.AllForKids.gui.ModifierOffreController">
+
+
+
+
+    <stylesheets>
+        <URL value="@addoffre.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="45.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre des Enfants " />
+      <Text layoutX="45.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="45.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service demandé" />
+      <Text layoutX="48.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age du cadé" />
+      <Text layoutX="45.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de l'offre" />
+      <Text layoutX="43.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temps demandé" />
+      <Text layoutX="58.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ville" />
+      <TextField fx:id="NbrEnfantbtn" layoutX="206.0" layoutY="45.0" />
+      <TextField fx:id="Servicebtn" layoutX="206.0" layoutY="94.0" />
+      <TextField fx:id="Agebtn" layoutX="206.0" layoutY="136.0" />
+      <ChoiceBox fx:id="Tempsbtn" layoutX="206.0" layoutY="223.0" prefWidth="150.0" />
+      <DatePicker fx:id="Datebtn" layoutX="206.0" layoutY="179.0" />
+      <ChoiceBox fx:id="Villebtn" layoutX="206.0" layoutY="264.0" prefWidth="150.0" />
+      <Button fx:id="UpdateOffrebtn" layoutX="91.0" layoutY="327.0" mnemonicParsing="false" onAction="#UpdateOffre" text="Modifier Offre" />
+      <Button fx:id="ResetOffrebtn" layoutX="223.0" layoutY="327.0" mnemonicParsing="false" onAction="#Reset" text="Annuler" />
+   </children>
+
+</AnchorPane>

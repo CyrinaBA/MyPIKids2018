@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.AllForKids.gui.UpdateProfilController">
+   <children>
+      <Label layoutX="-5.0" prefHeight="571.0" prefWidth="788.0" style="-fx-background-color: #23A6C3;" />
+      <ImageView fx:id="tof" fitHeight="177.0" fitWidth="216.0" layoutX="63.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="49.0" fitWidth="200.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="322.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe:" wrappingWidth="38.03515625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="textadr" layoutX="309.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse:" wrappingWidth="63.03515625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="textetat" layoutX="322.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etat:" wrappingWidth="38.03515625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="textville" layoutX="32.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ville:" wrappingWidth="38.03515625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="textnum" layoutX="321.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro de téléphone:" wrappingWidth="169.99999835155904">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="textnbr" layoutX="291.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre d'année d'expérience(s):" wrappingWidth="208.03515625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="316.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="49.03514277935028">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="textage" layoutX="33.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:" wrappingWidth="38.0351587831974">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="saveprofil" layoutX="623.0" layoutY="518.0" mnemonicParsing="false" onAction="#saveprofil" text="Enregistrer" />
+      <TextField fx:id="sexe" layoutX="395.0" layoutY="141.0" />
+      <TextField fx:id="mail" layoutX="395.0" layoutY="199.0" />
+      <TextField fx:id="passwrd1" layoutX="395.0" layoutY="261.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="passwrd2" layoutX="595.0" layoutY="261.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="adr" layoutX="395.0" layoutY="314.0" />
+      <TextField fx:id="etat" layoutX="395.0" layoutY="368.0" />
+      <TextField fx:id="age" layoutX="95.0" layoutY="420.0" />
+      <TextField fx:id="nbr" layoutX="520.0" layoutY="420.0" />
+      <TextField fx:id="num" layoutX="520.0" layoutY="471.0" />
+      <TextField fx:id="nom" layoutX="85.0" layoutY="95.0" />
+      <Text layoutX="292.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mot de passe:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="595.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="répeter mot de passe:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="ville" layoutX="95.0" layoutY="470.0" prefWidth="150.0" />
+      <Button fx:id="choose" layoutX="118.0" layoutY="357.0" mnemonicParsing="false" onAction="#choisir" prefHeight="25.0" prefWidth="105.0" text="Button" />
+   </children>
+</AnchorPane>

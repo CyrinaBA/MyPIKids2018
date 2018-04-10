@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.AllForKids.gui.AfficheParentOffreController">
+   <children>
+      <ScrollPane fx:id="ScrollP" layoutX="29.0" layoutY="100.0" prefHeight="200.0" prefWidth="710.0">
+         <content>
+            <TableView fx:id="TabPar" prefHeight="400.0" prefWidth="710.0">
+              <columns>
+                <TableColumn fx:id="id_bbTab" prefWidth="86.0" text="babysitter_id" />
+                <TableColumn fx:id="nbrenfTab" prefWidth="64.0" text="Nbre Enfant" />
+                  <TableColumn fx:id="servTab" prefWidth="107.0" text="Service" />
+                  <TableColumn fx:id="ageTab" prefWidth="67.0" text="Age" />
+                  <TableColumn fx:id="dateTab" prefWidth="133.0" text="Date de l'offre" />
+                  <TableColumn fx:id="temTab" prefWidth="75.0" text="Temps" />
+                  <TableColumn fx:id="villeTab" prefWidth="75.0" text="Ville" />
+                  <TableColumn fx:id="etatTab" prefWidth="75.0" text="Etat Offre" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <AnchorPane fx:id="Popup" layoutX="35.0" layoutY="7.0" prefHeight="67.0" prefWidth="97.0" style="-fx-background-color: rgba(0,0,0,0.3);">
+         <children>
+            <JFXButton fx:id="Modify" buttonType="RAISED" onAction="#updateOffre" prefHeight="33.0" prefWidth="97.0" text="Modifier" textFill="WHITE" />
+            <JFXButton fx:id="Delete" layoutY="36.0" onAction="#DeleteOffre" prefHeight="25.0" prefWidth="97.0" text="Supprimer" textFill="WHITE" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
